@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <title>mascool - Ruby</title>
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  </head>
+  <body>
+    <div class="wiki" id="content_view" style="display: block;">
+<h2 id="toc0"><a name="x-Lambdas:"></a>Lambdas:</h2>
+ 
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.ruby  {font-family:monospace;}
+.ruby .imp {font-weight: bold; color: red;}
+.ruby .kw1 {color:#9966CC; font-weight:bold;}
+.ruby .kw2 {color:#0000FF; font-weight:bold;}
+.ruby .kw3 {color:#CC0066; font-weight:bold;}
+.ruby .kw4 {color:#CC00FF; font-weight:bold;}
+.ruby .co1 {color:#008000; font-style:italic;}
+.ruby .co4 {color: #cc0000; font-style: italic;}
+.ruby .coMULTI {color:#000080; font-style:italic;}
+.ruby .es0 {color:#000099;}
+.ruby .br0 {color:#006600; font-weight:bold;}
+.ruby .sy0 {color:#006600; font-weight:bold;}
+.ruby .st0 {color:#996600;}
+.ruby .nu0 {color:#006666;}
+.ruby .me1 {color:#9900CC;}
+.ruby .re0 {color:#ff6633; font-weight:bold;}
+.ruby .re1 {color:#0066ff; font-weight:bold;}
+.ruby .re2 {color:#6666ff; font-weight:bold;}
+.ruby .re3 {color:#ff3333; font-weight:bold;}
+.ruby span.xtra { display:block; }
+
+-->
+</style><pre class="ruby">greeter_l = <span class="kw3">lambda</span> <span class="kw1">do</span> <span class="sy0">|</span>name<span class="sy0">|</span>
+  <span class="kw3">puts</span> <span class="st0">&quot;Hello, #{name}&quot;</span>
+<span class="kw1">end</span></pre>
+
+<br />
+<h4 id="toc1"><a name="x-Lambdas:--Stabby lambda:"></a>Stabby lambda:</h4>
+ 
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.ruby  {font-family:monospace;}
+.ruby .imp {font-weight: bold; color: red;}
+.ruby .kw1 {color:#9966CC; font-weight:bold;}
+.ruby .kw2 {color:#0000FF; font-weight:bold;}
+.ruby .kw3 {color:#CC0066; font-weight:bold;}
+.ruby .kw4 {color:#CC00FF; font-weight:bold;}
+.ruby .co1 {color:#008000; font-style:italic;}
+.ruby .co4 {color: #cc0000; font-style: italic;}
+.ruby .coMULTI {color:#000080; font-style:italic;}
+.ruby .es0 {color:#000099;}
+.ruby .br0 {color:#006600; font-weight:bold;}
+.ruby .sy0 {color:#006600; font-weight:bold;}
+.ruby .st0 {color:#996600;}
+.ruby .nu0 {color:#006666;}
+.ruby .me1 {color:#9900CC;}
+.ruby .re0 {color:#ff6633; font-weight:bold;}
+.ruby .re1 {color:#0066ff; font-weight:bold;}
+.ruby .re2 {color:#6666ff; font-weight:bold;}
+.ruby .re3 {color:#ff3333; font-weight:bold;}
+.ruby span.xtra { display:block; }
+
+-->
+</style><pre class="ruby">lambda_fimc = <span class="sy0">-&gt;</span><span class="br0">&#40;</span>name<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw3">puts</span> <span class="st0">&quot;Hello, #{name}&quot;</span>
+<span class="br0">&#125;</span>
+lambda_func</pre>
+
+<br />
+<h2 id="toc2"><a name="x-Procs:"></a>Procs:</h2>
+ 
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.ruby  {font-family:monospace;}
+.ruby .imp {font-weight: bold; color: red;}
+.ruby .kw1 {color:#9966CC; font-weight:bold;}
+.ruby .kw2 {color:#0000FF; font-weight:bold;}
+.ruby .kw3 {color:#CC0066; font-weight:bold;}
+.ruby .kw4 {color:#CC00FF; font-weight:bold;}
+.ruby .co1 {color:#008000; font-style:italic;}
+.ruby .co4 {color: #cc0000; font-style: italic;}
+.ruby .coMULTI {color:#000080; font-style:italic;}
+.ruby .es0 {color:#000099;}
+.ruby .br0 {color:#006600; font-weight:bold;}
+.ruby .sy0 {color:#006600; font-weight:bold;}
+.ruby .st0 {color:#996600;}
+.ruby .nu0 {color:#006666;}
+.ruby .me1 {color:#9900CC;}
+.ruby .re0 {color:#ff6633; font-weight:bold;}
+.ruby .re1 {color:#0066ff; font-weight:bold;}
+.ruby .re2 {color:#6666ff; font-weight:bold;}
+.ruby .re3 {color:#ff3333; font-weight:bold;}
+.ruby span.xtra { display:block; }
+
+-->
+</style><pre class="ruby">greeter_p = <span class="kw3">proc</span> <span class="kw1">do</span> <span class="sy0">|</span>name<span class="sy0">|</span>
+  <span class="kw3">puts</span> <span class="st0">&quot;Hello, #{name}&quot;</span>
+<span class="kw1">end</span>
+&nbsp;
+greeter_p = <span class="kw3">proc</span> <span class="kw1">do</span> <span class="sy0">|</span>name<span class="sy0">|</span>
+  <span class="kw3">puts</span> <span class="st0">&quot;Hello, #{name}&quot;</span>
+<span class="kw1">end</span></pre>
+
+<br />
+Calling a proc<br />
+
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.ruby  {font-family:monospace;}
+.ruby .imp {font-weight: bold; color: red;}
+.ruby .kw1 {color:#9966CC; font-weight:bold;}
+.ruby .kw2 {color:#0000FF; font-weight:bold;}
+.ruby .kw3 {color:#CC0066; font-weight:bold;}
+.ruby .kw4 {color:#CC00FF; font-weight:bold;}
+.ruby .co1 {color:#008000; font-style:italic;}
+.ruby .co4 {color: #cc0000; font-style: italic;}
+.ruby .coMULTI {color:#000080; font-style:italic;}
+.ruby .es0 {color:#000099;}
+.ruby .br0 {color:#006600; font-weight:bold;}
+.ruby .sy0 {color:#006600; font-weight:bold;}
+.ruby .st0 {color:#996600;}
+.ruby .nu0 {color:#006666;}
+.ruby .me1 {color:#9900CC;}
+.ruby .re0 {color:#ff6633; font-weight:bold;}
+.ruby .re1 {color:#0066ff; font-weight:bold;}
+.ruby .re2 {color:#6666ff; font-weight:bold;}
+.ruby .re3 {color:#ff3333; font-weight:bold;}
+.ruby span.xtra { display:block; }
+
+-->
+</style><pre class="ruby">greeter = <span class="kw3">proc</span> <span class="kw1">do</span> <span class="sy0">|</span>name<span class="sy0">|</span>
+  <span class="kw3">puts</span> <span class="st0">&quot;Hello, #{name}&quot;</span>
+<span class="kw1">end</span>
+greeter<span class="br0">&#91;</span><span class="st0">&quot;Kashti&quot;</span><span class="br0">&#93;</span>
+greeter.<span class="br0">&#40;</span><span class="st0">&quot;Josh&quot;</span><span class="br0">&#41;</span></pre>
+
+<br />
+<h2 id="toc3"><a name="x-Find source of method"></a>Find source of method</h2>
+ In Ruby 1.9, you can retrieve the place where the method was defined<br />
+using #source_location:<br />
+
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.ruby  {font-family:monospace;}
+.ruby .imp {font-weight: bold; color: red;}
+.ruby .kw1 {color:#9966CC; font-weight:bold;}
+.ruby .kw2 {color:#0000FF; font-weight:bold;}
+.ruby .kw3 {color:#CC0066; font-weight:bold;}
+.ruby .kw4 {color:#CC00FF; font-weight:bold;}
+.ruby .co1 {color:#008000; font-style:italic;}
+.ruby .co4 {color: #cc0000; font-style: italic;}
+.ruby .coMULTI {color:#000080; font-style:italic;}
+.ruby .es0 {color:#000099;}
+.ruby .br0 {color:#006600; font-weight:bold;}
+.ruby .sy0 {color:#006600; font-weight:bold;}
+.ruby .st0 {color:#996600;}
+.ruby .nu0 {color:#006666;}
+.ruby .me1 {color:#9900CC;}
+.ruby .re0 {color:#ff6633; font-weight:bold;}
+.ruby .re1 {color:#0066ff; font-weight:bold;}
+.ruby .re2 {color:#6666ff; font-weight:bold;}
+.ruby .re3 {color:#ff3333; font-weight:bold;}
+.ruby span.xtra { display:block; }
+
+-->
+</style><pre class="ruby">  <span class="kw1">def</span> foo
+&nbsp;
+  <span class="kw1">end</span>
+&nbsp;
+  method<span class="br0">&#40;</span><span class="re3">:foo</span><span class="br0">&#41;</span>.<span class="me1">source_location</span> <span class="co1">#=&gt; [&quot;file.rb&quot;, 1]</span></pre>
+
+<br />
+<h2 id="toc4"><a name="x-Using modules"></a>Using modules</h2>
+ <ul><li>include makes the module’s methods available to the instance of a class, while</li><li>extend makes these methods available to the class itself.</li></ul><br />
+<h2 id="toc5"><a name="x-Forking processes"></a>Forking processes</h2>
+ <ul><li>Process.detach spawns a new thread whose sole job is to wait for the child process specified by pid to exit. This ensures that the kernel doesn't hang on to any status information we don't need.</li></ul>
+<style type="text/css"><!--
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.text  {font-family:monospace;}
+.text .imp {font-weight: bold; color: red;}
+.text span.xtra { display:block; }
+
+-->
+</style><pre class="text">message = 'Good Morning' recipient = 'tree@mybackyard.com'
+￼￼pid = fork do
+  # In this contrived example the parent process forks a child to take
+  # care of sending data to the stats collector. Meanwhile the parent
+  # process has continued on with its work of sending the actual payload.
+￼  # The parent process doesn't want to be slowed down with this task, and
+  # it doesn't matter if this would fail for some reason.
+  StatsCollector.record message, recipient
+end
+&nbsp;
+# This line ensures that the process performing the stats collection
+# won't become a zombie.
+Process.detach(pid)</pre>
+
+
+    </div>
+  </body>
+</html>
