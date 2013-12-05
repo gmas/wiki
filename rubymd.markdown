@@ -1,3 +1,6 @@
+---
+title: Ruby
+---
 
 ### Lambdas:
 ```ruby
